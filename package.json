@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "ts-node-dev --respawn --transpile-only ./index.ts",
-        "build": "tsc ./index.ts",
+        "build": "tsc",
         "production": "node dist/app.js"
     },
     "repository": {
@@ -22,7 +22,8 @@
         "url": "https://github.com/nayanrabiul/search-bot/issues"
     },
     "homepage": "https://github.com/nayanrabiul/search-bot#readme",
-    "dependencies": {
+    "devDependencies": {
+        "@tsconfig/node-lts": "^18.12.3",
         "ts-node-dev": "^2.0.0",
         "typescript": "^5.1.6"
     }
